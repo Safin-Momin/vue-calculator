@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen w-screen flex justify-center items-center bg-[url('https://wallpaperaccess.com/full/187161.jpg')] bg-cover;
+}
+
+input {
+  @apply bg-gradient-to-r from-violet-200 to-violet-300/80 text-gray-600 w-[89%] h-5/6 rounded-lg mt-4 text-right border-none outline-none p-4 font-semibold text-4xl placeholder-gray-600 hover:animate-pulse;
+}
+
+.redBtn,
+.btn,
+.equal {
+  @apply bg-red-300/60 transition-all hover:bg-red-400/20 cursor-pointer text-gray-600 font-semibold py-4 px-6 rounded-3xl rounded-se-md rounded-es-md shadow-md active:shadow-xl text-center text-3xl border border-2 border-red-400/60;
+}
+
+.btn {
+  @apply bg-emerald-300/60 hover:bg-emerald-400/20 text-center text-3xl border border-2 border-emerald-400/60;
+}
+
+.equal {
+  @apply !bg-violet-300/60 hover:!bg-violet-400/20 border border-2 border-violet-400/60;
+}
+
+.plus {
+  @apply row-span-2 flex items-center justify-center;
+}
+
+.cVal {
+  @apply col-span-2 flex justify-center;
+}
